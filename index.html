@@ -7,79 +7,104 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      background: black;
       color: white;
       text-align: center;
-      padding: 60px 20px;
+      padding: 50px 20px;
     }
 
     h1 {
       font-size: 42px;
+      margin-bottom: 10px;
     }
 
     p {
       font-size: 18px;
-      max-width: 600px;
-      margin: 20px auto;
+      max-width: 650px;
+      margin: 15px auto;
+      line-height: 1.6;
     }
 
     .btn {
       display: inline-block;
       margin-top: 30px;
-      padding: 15px 30px;
-      background: #00c853;
-      color: white;
+      padding: 14px 28px;
+      background: white;
+      color: black;
       text-decoration: none;
       font-size: 18px;
-      border-radius: 8px;
+      font-weight: bold;
+      border-radius: 6px;
       transition: 0.3s;
     }
 
     .btn:hover {
-      background: #00e676;
+      background: #e0e0e0;
     }
 
-    .steps {
+    .section {
       margin-top: 50px;
-      font-size: 16px;
-      opacity: 0.9;
+      text-align: left;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid white;
+      padding: 25px;
+      border-radius: 10px;
     }
 
     footer {
-      margin-top: 80px;
-      font-size: 14px;
-      opacity: 0.7;
+      margin-top: 70px;
+      font-size: 15px;
+      opacity: 0.8;
     }
   </style>
 </head>
+
 <body>
 
   <h1>NUST LMS Auto Login</h1>
 
   <p>
-    Tired of entering your LMS credentials again and again?
-    This extension automatically logs you into the NUST LMS portal securely.
+    This Chrome extension automatically logs you into the NUST LMS portal.
+    It saves time by securely filling and submitting login credentials.
   </p>
 
-  <a class="btn" 
-     href="https://github.com/muhammadali182-q/nust-lms-auto-login/archive/refs/heads/main.zip">
-     Download Extension
+  <a class="btn" href="https://github.com/muhammadali182-q/nust-lms-auto-login/archive/refs/heads/main.zip">
+    Download Extension
   </a>
 
-  <div class="steps">
-    <h3>How to Install</h3>
-    1. Download the ZIP file<br>
-    2. Extract it<br>
-    3. Open chrome://extensions/<br>
-    4. Enable Developer Mode<br>
-    5. Click Load Unpacked<br>
-    6. Select the extracted folder
+  <div class="section">
+    <h2>Setup Instructions (Precisely)</h2>
+    <ol>
+      <li>Download the ZIP file from the GitHub link.</li>
+      <li>Extract the ZIP file using WinRAR or any extractor.</li>
+      <li>Open Google Chrome.</li>
+      <li>Go to: <b>chrome://extensions/</b></li>
+      <li>Enable <b>Developer Mode (Top Right Corner)</b>.</li>
+      <li>Click on <b>Load Unpacked</b>.</li>
+      <li>Select the extracted extension folder.</li>
+      <li>Extension will be installed automatically.</li>
+      <li>Login once to save credentials if required.</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>Developer Details</h2>
+    <p>
+      Name: Muhammad Ali<br>
+      Degree: BESE-15<br>
+      Institute: SEECS, NUST<br>
+      GitHub: 
+      <a href="https://github.com/muhammadali182-q" style="color:white;">
+        github.com/muhammadali182-q
+      </a>
+    </p>
   </div>
 
   <footer>
-    Muhammad Ali BESE-15 SEECS NUST
+    © 2026 Muhammad Ali | NUST SEECS | All Rights Reserved
   </footer>
 
 </body>
-
 </html>
