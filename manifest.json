@@ -9,8 +9,9 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://lms.nust.edu.pk/portal/login/index.php"],
+      "matches": ["https://lms.nust.edu.pk/portal/"],
       "js": ["content.js"]
     }
   ]
+
 }
