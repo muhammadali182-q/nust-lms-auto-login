@@ -1,221 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUST LMS Auto Login</title>
+  <title>NUST LMS Auto Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    h1 {
+      font-size: 42px;
+    }
 
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            height: 100vh;
-        }
+    p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 20px auto;
+    }
 
-        .wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            min-height: 100vh;
-        }
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background: #00c853;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
 
-        /* LEFT SECTION */
-        .left-section {
-            background-color: #000;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border-right: 2px solid #fff;
-        }
+    .btn:hover {
+      background: #00e676;
+    }
 
-        .header h1 {
-            font-size: 36px;
-            font-weight: 900;
-            margin-bottom: 15px;
-            letter-spacing: 1px;
-        }
+    .steps {
+      margin-top: 50px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
 
-        .header p {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 25px;
-            opacity: 0.9;
-        }
-
-        .download-btn {
-            display: inline-block;
-            padding: 14px 35px;
-            background: #fff;
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-            transition: 0.3s;
-        }
-
-        .download-btn:hover {
-            background: #e0e0e0;
-            transform: translateY(-2px);
-        }
-
-        /* RIGHT SECTION */
-        .right-section {
-            background-color: #1a1a1a;
-            padding: 40px;
-            overflow-y: auto;
-        }
-
-        .instructions-box h2 {
-            text-align: center;
-            font-size: 24px;
-            padding-bottom: 15px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #fff;
-        }
-
-        .instructions-list {
-            list-style: none;
-            counter-reset: step;
-        }
-
-        .instructions-list li {
-            counter-increment: step;
-            position: relative;
-            padding-left: 45px;
-            margin-bottom: 18px;
-            line-height: 1.5;
-            font-size: 15px;
-        }
-
-        .instructions-list li::before {
-            content: counter(step);
-            position: absolute;
-            left: 0;
-            width: 30px;
-            height: 30px;
-            background: #fff;
-            color: #000;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-
-        .footer-info {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #fff;
-            text-align: center;
-        }
-
-        .footer-info h3 {
-            margin-bottom: 12px;
-        }
-
-        .footer-info p {
-            font-size: 14px;
-            margin: 8px 0;
-            opacity: 0.85;
-        }
-
-        .footer-info a {
-            color: #fff;
-            text-decoration: none;
-            border-bottom: 1px solid #fff;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            .wrapper {
-                grid-template-columns: 1fr;
-            }
-
-            .left-section {
-                border-right: none;
-                border-bottom: 2px solid #fff;
-                padding: 30px 20px;
-            }
-
-            .right-section {
-                padding: 30px 20px;
-            }
-
-            .header h1 {
-                font-size: 28px;
-            }
-        }
-    </style>
+    footer {
+      margin-top: 80px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="wrapper">
+  <h1>NUST LMS Auto Login</h1>
 
-    <!-- LEFT SECTION -->
-    <div class="left-section">
-        <div class="header">
-            <h1>NUST LMS AUTO LOGIN</h1>
-            <p>
-                Stop wasting time typing credentials. This powerful extension automatically logs you
-                into the NUST LMS portal with a single click.
-            </p>
+  <p>
+    Tired of entering your LMS credentials again and again?
+    This extension automatically logs you into the NUST LMS portal securely.
+  </p>
 
-            <a 
-               href="https://github.com/muhammadali182-q/nust-lms-auto-login/archive/refs/heads/main.zip"
-               class="download-btn">
-               ⬇ DOWNLOAD EXTENSION
-            </a>
-        </div>
-    </div>
+  <a class="btn" 
+     href="https://github.com/muhammadali182-q/nust-lms-auto-login/archive/refs/heads/main.zip">
+     Download Extension
+  </a>
 
-    <!-- RIGHT SECTION -->
-    <div class="right-section">
+  <div class="steps">
+    <h3>How to Install</h3>
+    1. Download the ZIP file<br>
+    2. Extract it<br>
+    3. Open chrome://extensions/<br>
+    4. Enable Developer Mode<br>
+    5. Click Load Unpacked<br>
+    6. Select the extracted folder
+  </div>
 
-        <div class="instructions-box">
-            <h2>HOW TO USE</h2>
-
-            <ul class="instructions-list">
-                <li>Click the Download Extension button</li>
-                <li>ZIP file will download to your computer</li>
-                <li>Right-click ZIP file and select Extract All</li>
-                <li>Open Google Chrome browser</li>
-                <li>Navigate to chrome://extensions/</li>
-                <li>Enable Developer Mode (top-right toggle)</li>
-                <li>Click Load Unpacked button</li>
-                <li>Select extracted folder</li>
-                <li>Click puzzle icon and add LMS credentials</li>
-                <li>Open NUST LMS website and auto login will work</li>
-            </ul>
-        </div>
-
-        <div class="footer-info">
-            <h3>MADE BY</h3>
-            <p><strong>Muhammad Ali</strong></p>
-            <p>BESE-15 (A) | SEECS NUST</p>
-
-            <p>
-                GitHub:
-                <a href="https://github.com/muhammadali182-q" target="_blank">
-                    github.com/muhammadali182-q
-                </a>
-            </p>
-
-            <p style="margin-top:15px;font-size:12px;opacity:0.7;">
-                Built with ❤ for NUST Students
-            </p>
-        </div>
-
-    </div>
-
-</div>
+  <footer>
+    Muhammad Ali BESE-15 SEECS NUST
+  </footer>
 
 </body>
+
 </html>
