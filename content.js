@@ -1,12 +1,26 @@
-chrome.storage.sync.get(["username", "password"], function(data) {
+window.addEventListener("load", function() {
 
-    const userField = document.querySelector("#username");
-    const passField = document.querySelector("#password");
-    const loginBtn = document.querySelector("#loginbtn");
+    chrome.storage.sync.get(["username", "password"], function(data) {
 
-    if (userField && passField && loginBtn) {
-        userField.value = data.username;
-        passField.value = data.password;
-        loginBtn.click();
-    }
+        // Detect login page elements
+        const userField = document.querySelector("input[name='username']");
+        const passField = document.querySelector("input[name='password']");
+        const loginBtn = document.querySelector("button[type='submit']");
+
+        // If login page exists AND user is not logged in
+        if(userField && passField && loginBtn){
+
+            if(data.username && data.password){
+
+                userField.value = data.username;
+                passField.value = data.password;
+
+                setTimeout(()=>{
+                    loginBtn.click();
+                }, 1000);
+            }
+        }
+
+    });
+
 });
